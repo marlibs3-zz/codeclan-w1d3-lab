@@ -14,4 +14,9 @@ def find_item(array, item)
   for thing in array
     return true if thing == item
   end
+  return false
+end
+
+def get_first_key(hash)
+  return hash.keys.first
 end
