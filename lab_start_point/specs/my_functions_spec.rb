@@ -26,22 +26,22 @@ class My_Functions < MiniTest::Test
     assert_equal( true, result )
   end
 
-  # def test_find_item_false
-  #   result = find_item( [ 'Hufflepuff', 'Slytherin', 'Gryffindor', 'Ravenclaw' ], "Batman" )
-  #   assert_equal( false, result )
-  # end
+  def test_find_item_false
+    result = find_item( [ 'Hufflepuff', 'Slytherin', 'Gryffindor', 'Ravenclaw' ], "Batman" )
+    assert_equal( false, result )
+  end
 
   # Write a function that has one parameter hash
   # It should return the first key from the hash
-  # def test_get_first_key
-  #   wallets = {
-  #     'Kat' => 12,
-  #     'John'  => 10,
-  #     'Darren'  => 1356,
-  #     'Zsolt' => 1
-  #   }
-  #   result = get_first_key( wallets )
-  #   assert_equal( 'Kat', result )
-  # end
+  def test_get_first_key
+    wallets = {
+      'Kat' => 12,
+      'John'  => 10,
+      'Darren'  => 1356,
+      'Zsolt' => 1
+    }
+    result = get_first_key( wallets )
+    assert_equal( 'Kat', result )
+  end
 
 end
