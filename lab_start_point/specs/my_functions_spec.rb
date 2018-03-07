@@ -11,19 +11,20 @@ class My_Functions < MiniTest::Test
     assert_equal( 5, result )
   end
 
-  # # Write a function that has a parameter named numbers
-  # # It should return the sum value of an array passed as the argument
-  # def test_sum_array
-  #   result = sum_array( [ 1,2,3,4,5 ] )
-  #   assert_equal( 15, result )
-  # end
 
-  # # Write a function that has two parameters, array and item
-  # # It should return true if the item exists in the array otherwise it should return false
-  # def test_find_item_true
-  #   result = find_item( [ 'Hufflepuff', 'Slytherin', 'Gryffindor', 'Ravenclaw' ], "Ravenclaw" )
-  #   assert_equal( true, result )
-  # end
+  # Write a function that has a parameter named numbers
+  # It should return the sum value of an array passed as the argument
+  def test_sum_array
+    result = sum_array( [ 1,2,3,4,5 ] )
+    assert_equal( 15, result )
+  end
+
+  # Write a function that has two parameters, array and item
+  # It should return true if the item exists in the array otherwise it should return false
+  def test_find_item_true
+    result = find_item( [ 'Hufflepuff', 'Slytherin', 'Gryffindor', 'Ravenclaw' ], "Ravenclaw" )
+    assert_equal( true, result )
+  end
 
   # def test_find_item_false
   #   result = find_item( [ 'Hufflepuff', 'Slytherin', 'Gryffindor', 'Ravenclaw' ], "Batman" )
