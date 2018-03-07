@@ -9,3 +9,9 @@ def sum_array(numbers)
     end
   return total
 end
+
+def find_item(array, item)
+  for thing in array
+    return true if thing == item
+  end
+end
