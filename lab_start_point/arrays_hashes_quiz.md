@@ -22,6 +22,14 @@ stops.insert(4, 'Polmont')
 
 stops.index("Linlithgow")
 
+index = 0
+for stop in stops
+  if stop == "Linlithgow"
+    break;
+  end
+  index +=
+end
+
 5. Remove `"Livingston"` from the array using its name
 
 stops.delete("Livingston")
@@ -71,7 +79,8 @@ end
         "nemo" => :fish,
         "kevin" => :fish,
         "spike" => :dog,
-        "rupert" => :parrot
+        "rupert" => :parrot,
+        :dog => "Fluffy"
       }
     },
     "Avril" => {
@@ -119,7 +128,7 @@ users["Erik"][:pets][:dog] = "Fluffy"
 
 9. Add yourself to the users hash
 
-users["Avril"] = {
+users["Marta"] = {
       :twitter => "martabeveridge",
       :favourite_numbers => [3, 13],
       :home_town => "Sant Cugat",
@@ -154,7 +163,7 @@ united_kingdom[1][:capital] = "Cardiff"
 
 2. Create a Hash for Northern Ireland and add it to the `united_kingdom` array (The capital is Belfast, and the population is 1,811,000).
 
-united_kingdom[3] = {
+united_kingdom.push = {
   name: "Northern Ireland",
   population: 1811000,
   capital: "Belfast"
